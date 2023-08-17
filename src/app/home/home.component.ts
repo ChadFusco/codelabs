@@ -26,6 +26,7 @@ export class HomeComponent {
   housingLocationList: HousingLocation[];
 
   constructor(private housingService: HousingService) {
+    // get housingLocationList from housingService to display full list in HomeComponent (via ngFor above)
     this.housingLocationList = this.housingService.getAllHousingLocations();
   }
 }
