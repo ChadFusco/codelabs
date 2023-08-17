@@ -1,0 +1,15 @@
+/* In Angular, the :host pseudo-class selector targets the host element of the component. The host element is the element to which the component's template is attached.
+
+In this case, we have a component named HomeComponent with the selector app-home, so when I use <app-home></app-home> in app.component.ts, the app-home element itself is the host element for the HomeComponent. */
+:host {
+    --content-padding: 10px;
+  }
+  header {
+    display: block;
+    height: 60px;
+    padding: var(--content-padding);
+    box-shadow: 0px 5px 25px var(--shadow-color);
+  }
+  .content {
+    padding: var(--content-padding);
+  }
